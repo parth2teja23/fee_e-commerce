@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+  <link rel="stylesheet" href="course.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Ekaksha</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="tempelates/login.hbs">Login</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="study_material.html">Study Material</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="testpage.html">Tests</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+  </div>
+  <div class="container mt-5">
+    <h1>Your Progress</h1>
+
+    <div class="progress">
+      <div id="progressBar" class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 0%;"
+        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+
+  </div>
+
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="col-lg-8">
+        <div class="video" id="video-container">
+          <!-- Updated the id to "video" -->
+          <iframe id="video" class="video-container" src="https://www.youtube.com/embed/HGTJBPNC-Gw?si=kwRdQYRwunQYDOSI"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="playlist-container">
+          <div class="playlist-container">
+            <div class="row">
+              <div class="col-6">
+                <h2>Basics </h2>
+              </div>
+              <div class="col-6 text-end"><button onclick="updateProgressBar()" class="button-62"
+                  role="button">Done!</button>
+              </div>
+            </div>
+            <select class="playlist-dropdown" id="basicsDropdown">
+              <option value="OFrLs22MDAw" id="1">Variables and Datatypes</option>
+              <option value="QQrcd_62VWM" id="2">Basic Operators</option>
+            </select>
+          </div>
+          <hr>
+          <div class="playlist-container">
+            <div class="row">
+              <div class="col-6">
+                <h2>Loops </h2>
+              </div>
+              <div class="col-6 text-end"><button onclick="updateProgressBar()" class="button-62"
+                  role="button">Done!</button>
+              </div>
+            </div>
+            <select class="playlist-dropdown" id="loopsDropdown">
+              <option value="vKeoXxVaga4" id="3">For Loop</option>
+              <option value="U_nugSKtbSk" id="4">While Loop</option>
+            </select>
+          </div>
+          <hr>
+          <div class="playlist-container" id="ConditionalsDropdown">
+            <div class="row">
+              <div class="col-6">
+                <h2>Conditionals </h2>
+              </div>
+              <div class="col-6 text-end"><button onclick="updateProgressBar()" class="button-62"
+                  role="button">Done!</button>
+              </div>
+            </div>
+            <select class="playlist-dropdown" id="conditionalsDropdown">
+              <optgroup label="Conditional Statements"></optgroup>
+              <option value="2EngAQX_kCg" id="5">Conditionals</option>
+              <option value="vA4r_MPRNsg" id="6">IF/ELIF/ELSE</option>
+            </select>
+          </div>
+          <hr>
+          <div class="playlist-container" id="LTSDropdown">
+            <div class="row">
+              <div class="col-6">
+                <h2>List, Tuples and Strings </h2>
+              </div>
+              <div class="col-6 text-end"><button onclick="updateProgressBar()" class="button-62"
+                  role="button">Done!</button>
+              </div>
+            </div>
+            <select class="playlist-dropdown" id="ltsDropdown">
+              <option value="1uCH3zqbv2s" id="7">List and tuples</option>
+              <option value="ERww7FiLrqk" id="8">String Properties</option>
+              <option value="L0j7JkFmYDI" id="9">String Slicing</option>
+            </select>
+          </div>
+          <hr>
+          <div class="playlist-container" id="FileDropdown">
+            <div class="row">
+              <div class="col-6">
+                <h2>File Handling </h2>
+              </div>
+              <div class="col-6 text-end"><button onclick="updateProgressBar()" class="button-62"
+                  role="button">Done!</button>
+              </div>
+            </div>
+            <select class="playlist-dropdown" id="fileDropdown">
+              <option value="0EgSo7hsRWM" id="10">Reading through Files</option>
+              <option value="W0fPZQBFpVE" id="11">Writing to Files</option>
+            </select>
+          </div>
+          <hr>
+          <div class="playlist-container" id="OOPDropdown">
+            <div class="row">
+              <div class="col-6">
+                <h2>Object Oriented Programming </h2>
+              </div>
+              <div class="col-6 text-end"><button onclick="updateProgressBar()" class="button-62"
+                  role="button">Done!</button>
+              </div>
+            </div>
+            <select class="playlist-dropdown" id="oopDropdown">
+
+              <option value="PBUtAdR1n6g" id="12">Modules</option>
+
+              <option value="ucSuTR5qat8" id="13">Classes and objects</option>
+            </select>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    // Get the dropdown elements
+    const basicsDropdown = document.getElementById('basicsDropdown');
+    const loopsDropdown = document.getElementById('loopsDropdown');
+    const conditionalsDropdown = document.getElementById('conditionalsDropdown');
+    const ltsDropdown = document.getElementById('ltsDropdown');
+    const fileDropdown = document.getElementById('fileDropdown');
+    const oopDropdown = document.getElementById('oopDropdown');
+
+    // Add event listener for dropdown change
+    basicsDropdown.addEventListener('change', updateVideo);
+    loopsDropdown.addEventListener('change', updateVideo);
+    conditionalsDropdown.addEventListener('change', updateVideo);
+    ltsDropdown.addEventListener('change', updateVideo);
+    fileDropdown.addEventListener('change', updateVideo);
+    oopDropdown.addEventListener('change', updateVideo);
+
+    // Function to update video source
+    function updateVideo() {
+      // Get the selected video ID
+      const selectedVideoId = this.value;
+      const selectedVideoElement = this.options[this.selectedIndex];
+      const videoIdAttribute = selectedVideoElement.getAttribute('id');
+
+      // Update the video iframe source
+      const video = document.getElementById('video');
+      video.src = `https://www.youtube.com/embed/${selectedVideoId}?si=AjQuONtVo1LKsJkx`;
+
+      // Play the video
+      video.play();
+      updateProgress(videoIdAttribute);
+    }
+    function updateProgress(videoIdAttribute) {
+      // Get the current progress or default to an empty object
+      const progress = JSON.parse(localStorage.getItem('progress')) || {};
+
+      // Update the progress for the current video
+      progress[videoIdAttribute] = true;
+
+      // Save the updated progress to localStorage
+      localStorage.setItem('progress', JSON.stringify(progress));
+
+      // Update the progress bar
+      updateProgressBar();
+    }
+
+    // Function to update the progress bar
+    function updateProgressBar() {
+      // Get the total number of videos
+      const totalVideos = 13; // Update this with the total number of videos
+
+      // Get the completed videos from localStorage
+      const progress = JSON.parse(localStorage.getItem('progress')) || {};
+      const completedVideos = Object.keys(progress).length;
+
+      // Calculate the progress percentage
+      const progressPercentage = 50;
+
+      // Update the progress bar width using getElementById
+      const progressBarContainer = document.getElementById('progressContainer');
+      const progressBar = progressBarContainer.querySelector('.progress-bar');
+      progressBar.style.width = `${50}%`;
+      progressBar.setAttribute('aria-valuenow', newWidth);
+    }
+  </script>
+
+
+
+  <script>
+    let progress = 0;
+    function updateProgressBar() {
+      progress += 17;
+      // Get the progress bar element
+      const progressBar = document.getElementById('progressBar');
+
+      // Set the new width (percentage)
+      const newWidth = Math.floor(Math.random() * 101);  //Random percentage between 0 and 100
+
+
+      // Update the width of the progress bar
+      progressBar.style.width = `${progress}%`;
+
+      // Update the aria-valuenow attribute
+      //progressBar.setAttribute('aria-valuenow', newWidth);
+    }
+  </script>
+</body>
+
+</html>

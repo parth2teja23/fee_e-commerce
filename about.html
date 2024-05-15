@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about us</title>
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <!-- <link rel="stylesheet" href="ekakshaAllcss.css"> -->
+  <style>
+    body {
+      background-image: linear-gradient(to right, #cdffd8, #94b9ff);
+    }
+
+    nav {
+      background-color: rgb(43, 107, 181);
+      overflow: hidden;
+      font-family: cursive;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin-left: 100px;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+      border-radius: 30px;
+    }
+
+    :root {
+      --main-color: rgb(43, 107, 181);
+      --red: #e74c3c;
+      --orange: #f39c12;
+      --light-color: #888;
+      --light-bg: #eee;
+      --black: #2c3e50;
+      --white: #fff;
+      --border: .1rem solid rgba(0, 0, 0, .2);
+    }
+
+    * {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      text-decoration: none;
+    }
+
+
+
+    html {
+      font-size: 62.5%;
+      overflow-x: hidden;
+    }
+
+    .about .row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .about .row .image {
+      flex: 1 1 40rem;
+    }
+
+    .about .row .image img {
+      width: 100%;
+      height: 50rem;
+    }
+
+    .about .row .content {
+      flex: 1 1 40rem;
+    }
+
+    .about .row .content p {
+      font-size: 1.7rem;
+      line-height: 2;
+      color: var(--light-color);
+      padding: 1rem 0;
+    }
+
+    .about .row .content h3 {
+      font-size: 3rem;
+      color: var(--black);
+      text-transform: capitalize;
+    }
+
+    .box-container {
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+
+    .about .box-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 3rem;
+    }
+
+    .about .box-container .box {
+      border-radius: .5rem;
+      background-color: var(--white);
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+    }
+
+    .about .box-container .box i {
+      font-size: 4rem;
+      color: var(--main-color);
+    }
+
+    .about .box-container .box h3 {
+      font-size: 2.5rem;
+      color: var(--black);
+      margin-bottom: .3rem;
+    }
+
+    .box {
+      margin-top: 60px;
+    }
+
+    .about .box-container .box p {
+      font-size: 1.7rem;
+      color: var(--light-color);
+    }
+
+    .reviews .heading {
+      font-size: 30px;
+      margin-left: 90px;
+      margin-top: 50px;
+    }
+
+    .reviews .box-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .reviews .box-container .box {
+      border-radius: .5rem;
+      background-color: var(--white);
+      padding: 2rem;
+    }
+
+    .reviews .box-container .box p {
+      line-height: 1.7;
+      font-size: 1.7rem;
+      color: var(--light-color);
+    }
+
+    .reviews .box-container .box .student {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .reviews .box-container .box .student h3 {
+      font-size: 2rem;
+      color: var(--black);
+      margin-bottom: .3rem;
+    }
+
+    .reviews .box-container .box .student .stars {
+      font-size: 1.5rem;
+      color: var(--orange);
+    }
+
+    footer {
+      background-color: rgb(43, 107, 181);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      font-size: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <a target="_blank" href="index.html">Home</a>
+    <a target="_blank" href="testpage.html">Test Section</a>
+    <a target="_blank" href="study_material.html">Study Material</a>
+    <a target="_blank" href="tempelates/login.hbs">Login/Signup</a>
+    <a target="_blank" href="aboutpage.html">About</a>
+  </nav>
+
+  </div>
+
+  <section class="about">
+
+    <div class="row">
+
+      <div class="image">
+        <img src="about-img.svg" alt="">
+      </div>
+
+      <div class="content">
+        <h3>why choose us?</h3>
+        <p>"Welcome to e-Kaksha, where learning meets innovation. As a dedicated learner, I founded this platform with a
+          simple yet profound vision: to make education accessible, engaging, and tailored to individual needs. Our
+          curated courses, designed for all levels, promise a seamless learning experience. Join us in the pursuit of
+          knowledge, where quality meets convenience. Let's learn, grow, and thrive together."</p>
+
+      </div>
+
+    </div>
+
+    <div class="box-container">
+
+      <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <div>
+          <h3>+10k</h3>
+          <p>online courses</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-user-graduate"></i>
+        <div>
+          <h3>+40k</h3>
+          <p>brilliant students</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-chalkboard-user"></i>
+        <div>
+          <h3>+2k</h3>
+          <p>expert tutors</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-briefcase"></i>
+        <div>
+          <h3>100%</h3>
+          <p>job placement</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="reviews">
+
+    <h1 class="heading">student's reviews</h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <p>Its really amazing website... i loved it and enjoyed learning with it and i have got to know about the tech
+          related stuff and i have learned the web development with your amazing website ...thank you </p>
+        <div class="student">
+
+          <div>
+            <h3>Anchal </h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <p>I recently had the pleasure of exploring [E-Learning Website], and I must say, it exceeded all my
+          expectations. As a passionate learner always on the lookout for high-quality educational platforms.</p>
+        <div class="student">
+
+          <div>
+            <h3>Adrija Arora</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <p>The quality of instructors and the depth of their expertise were evident in the content. I appreciated the
+          clear and concise explanations, as well as the real-world examples that brought concepts to life. </p>
+        <div class="student">
+
+          <div>
+            <h3>Pranav</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <p> Interactive elements keep learning engaging, and the mobile responsiveness adds a flexible touch.
+          Instructors are top-notch, and the supportive community seals the deal.I am really grateful to uh ..</p>
+        <div class="student">
+
+          <div>
+            <h3>Anishka</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <p>The mobile responsiveness of the platform deserves a special mention. Being able to access the courses on the
+          go enhanced the flexibility of my learning journey.</p>
+        <div class="student">
+
+          <div>
+            <h3>Ashu Mehta</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <p> Interactive elements keep learning engaging, and the mobile responsiveness adds a flexible touch.
+          Instructors are top-notch, and the supportive community seals the deal. Highly recommended for online learning
+          experience!</p>
+        <div class="student">
+
+          <div>
+            <h3>Sneha Sharma </h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <footer class="footer">
+
+    &copy; copyright @ 2023 by <span>e-kaksha</span> | all rights reserved!
+
+  </footer>
+
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

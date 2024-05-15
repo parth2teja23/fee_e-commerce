@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E kaksha</title>
+  <link rel="icon" href="C:\Users\pavik\Downloads\Untitled design (4).png">
+  <style>
+    body {
+      background-image: linear-gradient(to right, #cdffd8, #94b9ff);
+
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      gap: 40px;
+      padding: 90px;
+    }
+
+    .course-card {
+      border-color: black;
+      padding: 20px;
+      color: rgb(22, 21, 21);
+      width: 200px;
+      border: 5px;
+      background-color: #c7d8f8;
+      height: 300px;
+    }
+
+    .course-card a {
+      display: block;
+      margin-top: 0.5cm;
+      color: rgb(21, 21, 20);
+    }
+
+    .course-card a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .course-card p {
+      margin-top: 1cm;
+      text-decoration: none;
+      color: black;
+    }
+
+    .course-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-card:visited {
+      color: blueviolet;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #8fbaf2;
+      color: #0c0748;
+      font-size: 2rem;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .team-section {
+      background-color: #0053a0;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      color: #fff;
+      font-size: 2rem;
+    }
+
+    .team-member {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    /*.team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(8, 86, 9, 0.2);
+}*/
+
+    .team-member p {
+      color: #fff;
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    .header {
+      background-image: url("program.jpg");
+      background-size: cover;
+      background-size: contain;
+      width: 100%;
+      height: 400px;
+      background-repeat: no-repeat;
+      background-position: center;
+      text-align: left;
+      padding: 100px 0;
+      padding-left: 30px;
+    }
+
+    /*.header h3{
+    margin-top: 140px;
+    text-align: left;
+    margin-left: 50px;
+    color:#0053a0;
+}*/
+    .header h1,
+    h3 {
+      text-align: left;
+
+      padding-left: 160px;
+      margin-left: 50px;
+      color: #0053a0;
+    }
+
+    .nav-bar {
+      font-family: cursive;
+      padding: 20px 0;
+      background-color: rgb(43, 107, 181);
+      text-align: center;
+
+      /*  margin:20px 20px 20px 20px;*/
+    }
+
+    /* 0 20px 20px 20px mene top right bottom left margin in margin syntax in css*/
+    .nav-bar a:hover {
+      color: aqua;
+    }
+
+    .nav-bar a {
+      margin: 0 20px;
+      margin-left: 40px;
+      color: rgb(219, 233, 251);
+      font-size: 1.25rem;
+    }
+
+    .header h1:hover {
+      color: rgb(27, 34, 239);
+    }
+
+    .header h3:hover {
+      color: rgb(27, 34, 239);
+    }
+
+    .about {
+
+      font-size: 20px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="nav-bar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a target="_blank" href="tempelates/login.hbs">login/Signup</a>
+      <a href="study_material.html">Study
+        Material</a>
+      <a href="testpage.html">Tests</a>
+      <!-- <a target="_blank" href="#">Signup</a>-->
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+
+  <div class="header">
+
+    <h1 id="heading" style="margin-top: 200px;">Update your Skills Without
+      Limits...</h1>
+    <b>
+      <p>
+      <h3>"People expect to be bored by e-Learning -
+        let's show them it doesn't have to be like that!"</h3>
+      </p>
+    </b>
+  </div>
+
+
+  <div class="container">
+    <!--course card 1-->
+    <div class="course-card">
+      <a target="_blank" href="course.html">
+        <img src="javajj.jpeg" alt="this is the icon ">
+        <h2>Java: Full Course</h2>
+        <p>
+          Students will design object-oriented applications and will
+          create Java programs using hands-on activities.
+        </p>
+        learn more
+      </a>
+    </div>
+    <!--this is course card 2 -->
+    <div class="course-card">
+      <a target="_blank" href="course.html">
+        <img src="WebDNew.jpg" alt="this is the icon ">
+        <h2>Web Development</h2>
+        <p>
+          You will learn how front-end developers create websites and
+          applications that work well and are easy to maintain
+        </p>
+        learn more
+      </a>
+    </div>
+    <!--this is course card 3 -->
+    <div class="course-card">
+      <a target="_blank" href="course.html">
+        <img src="cplus.webp" alt="this is the icon ">
+        <h2>C++ :Full Course</h2>
+        <p>
+          C++ is portable and can be used to develop applications for
+          multiple platforms.
+        </p>
+        <a target="_blank" href="course.html">learn more</a>
+    </div>
+    <!--this is course card 4-->
+    <div class="course-card">
+      <img src="python-programming-tutorial.webp" alt="this is the icon ">
+      <h2>Python:Full Course</h2>
+      <p>
+        Python is an interpreted, object-oriented, high-level
+        programming language.
+      </p>
+      <a target="_blank" href="course.html">learn more</a>
+    </div>
+  </div>
+
+  <div class="team-section">
+    <h2>Our Team</h2>
+    <div class="team-member">
+      <div>
+        <p>Pavika Sharma</p>
+        <p>Front-End Web Developer </p>
+      </div>
+      <div>
+        <p>Parth</p>
+        <p>Python Programmer</p>
+      </div>
+      <div>
+        <p>Piyush Goyal</p>
+        <p>Interface Designer</p>
+      </div>
+    </div>
+    <div class="team-member" style="color: #fff ">p
+
+      <a target="_blank" href="#">About</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 e-Kaksha. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+  name = localStorage.getItem("username");
+  if (name === 'null') {
+    document.getElementById("heading").innerHTML = "Update your Skills Without Limits...";
+  } else {
+    document.getElementById("heading").innerHTML = "Welcome " + name + "!";
+  }
+</script>
+
+</html>
